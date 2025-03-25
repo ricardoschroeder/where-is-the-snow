@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <nav>
-      <p>Where is the snow?</p>
+      <p>Is it snowing in ...?</p>
     </nav>
     <router-view />
   </div>

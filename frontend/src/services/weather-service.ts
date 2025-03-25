@@ -11,3 +11,15 @@ export async function getSnowData(city: string) {
     throw error;
   }
 }
+
+export async function getCityCoordinates(city: string) {
+  try {
+    const response = await axios.get("/api/coordinates", {
+      params: { city },
+    });
+    return response.data;
+  } catch (error) {
+    console.error("Failed to fetch city coordinates:", error);
+    throw error;
+  }
+}
